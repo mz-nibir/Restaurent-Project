@@ -8,9 +8,9 @@ class Contact extends Component {
 
         this.state = {
             firstname: "",
-            lastname="",
-            telnum="",
-            email="",
+            lastname: "",
+            telnum: "",
+            email: "",
             agree: false,
             contactType: 'Tel',
             message: ""
@@ -21,15 +21,15 @@ class Contact extends Component {
         return (
             <div className="container">
 
-                <div className="row row-content">
+                <div className="row row-content" style={{ paddingLeft: "20px", textAlign: "left" }}>
                     <div className="col-12">
                         <h3>Send us your Feedback</h3>
 
                     </div >
-                    <div className="col-12">
+                    <div className="col-12 col-md-7">
                         <Form>
                             <FormGroup row>
-                                <label htmlFor="firstname" md={2} >First Name</label>
+                                <Label htmlFor="firstname" md={2} >First Name</Label>
                                 <Col md={10}>
                                     <Input type="text" name="firstname" placeholder="First Name"
                                         value={this.state.firstname} />
@@ -65,13 +65,13 @@ class Contact extends Component {
                                 </Col>
                             </FormGroup>
 
-                            <FormGroup>
+                            <FormGroup row>
                                 <Col md={{ size: 6, offset: 2 }}>
 
                                     <FormGroup check>
                                         <Label>
                                             <Input type="checkbox" name="agree" checked={this.state.agree} />
-                                            <strong>May we contact you</strong>
+                                            <strong>May we contact you ?</strong>
 
                                         </Label>
 
