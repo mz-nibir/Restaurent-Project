@@ -1,8 +1,11 @@
 import DISHES from '../data/dishes'
 import COMMENTS from '../data/comments'
+
+
 const initialState = {
     dishes: DISHES,
-    comments: COMMENTS
+    comments: COMMENTS,
+    sample: "Hallo World"
 }
 
 
